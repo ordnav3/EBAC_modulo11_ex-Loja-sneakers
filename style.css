@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #e43801;
+    padding: 16px;
+    border-bottom: 2px solid black;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    padding-right: 200px;
+    text-transform: uppercase;
+}
+
+
+.menu>li {
+    padding-right: 50px;
+    float: left;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header .container form {
+    display: flex;
+}
+
+header .container form input,
+header .container form button {
+    padding: 15px;
+    border: none;
+}
+
+header .container form button,
+.lista-produtos li button {
+    background-color: #eb521a;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.sobreloja .container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.sobreloja .container img {
+    margin-right: 20px;
+    width: 320px;
+
+}
+
+.sobreloja .container h2,
+.produtos .container h2 {
+    font-size: 20pt;
+    font-style: italic;
+    color: #eb521a;
+    padding: 20px;
+    border-bottom: 2px solid #eb521a;
+    margin-bottom: 30px;
+}
+
+.lista-produtos {
+    display: flex;
+}
+
+.lista-produtos li {
+    max-width: 30%;
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+
+.lista-produtos li img {
+    width: 100%;
+}
+
+.lista-produtos li p {
+    font-size: 10pt;
+}
+
+.lista-produtos li button {
+    padding: 8px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.item-central {
+    margin: 0 2%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    header h1 {
+        padding-right: 20px;
+    }
+
+    .sobreloja .container {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .sobreloja .container img{
+        width: 100%;
+    }
+
+    .lista-produtos {
+        flex-wrap: wrap;
+    }
+
+    .lista-produtos li {
+        max-width: 48%;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .container{
+        max-width: 90%;
+    }
+
+    header h1 {
+        padding-right: 20px;
+        font-size: 15pt;
+    }
+
+    .menu>li {
+        font-size: 7pt;
+        margin-bottom: 5px;
+        padding-right: 8px;
+    }
+
+    header .container form input,
+header .container form button {
+    padding: 2px;
+    width: 70px;
+}
+
+    .sobreloja .container {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .sobreloja .container img{
+        width: 100%;
+    }
+
+    .lista-produtos {
+        flex-wrap: wrap;
+    }
+
+    .lista-produtos li {
+        max-width: 100%;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+}
